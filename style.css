@@ -1,3 +1,62 @@
+/* used to reset default spacing */
 body {
-    
+  font-family: Arial, Helvetica, sans-serif;
+  background: #4f4f4f;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* title */
+h1 {
+  margin-top: 36px;
+  color: #398;
+}
+
+/* Converter box */
+.convert-box {
+    background: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Input from user */
+input {
+    padding: 10px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Button used to start converter */
+button {
+    padding: 10px 16px;
+    border: none;
+    background: #0177ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #005fcb;
+}
+
+/* Final Result */
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #222;
+  font-size: 18px;
 }

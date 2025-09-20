@@ -1,24 +1,25 @@
-// Add your currency exchange rate here
-const exchangeRates = {
-    "USD": {
-      "USD": 1,
-      // Add more "to" currencies and rates as needed
-    },
-    "EUR": {
-      "USD": 1.07,
-      // Add more "to" currencies and rates as needed
-    },
 
-    // Add more "from" currencies as needed
-  };
+// conversion rates for usd and eur 
+const Yen_to_USD = 0.0068;
+const Yen_to_EUR = 0.0063;
 
+function convertYen(){
+    const yen = document.getElementById("yenInput").value;
 
-  const convert = () => {
-    const fromCurrency = document.getElementById("fromCurrency").value;
-    const toCurrency = document.getElementById("toCurrency").value;
-    const fromAmount = document.getElementById("fromAmount").value;
+    if (yen === "" || yen <= 0) {
+        alert("Please enter a valid amount for Yen.");
+        return;
+    }
 
-    const exchangeRate = exchangeRates[fromCurrency][toCurrency];
-    const toAmount = fromAmount * exchangeRate;
-    document.getElementById("toAmount").value = toAmount;
-  }
+    // used to calc conversions
+    const usd = yen * Yen_to_USD;
+    const eur = yen * Yen_to_EUR;
+
+    // Now seperated to show output fields seperately USD | EUR
+    document.getElementById("usdOutput").value = usd;
+    document.getElementById("eurOutput").value = eur;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("convertBtn").addEventListener("click", convertYen);
+    })

@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width">
-        <title>CIT 3606 Currency Converter</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      
-        <h1>CIT 3606 Currency Converter</h1>
-      
-        From: 
-        <input type="text" id="fromAmount" value="1" />
-        <select id="fromCurrency">
-            <option value="USD">US Dollars</option>
-            <option value="EUR">Euros</option>
-        </select>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>CIT 3606 Lab 3 Currency Converter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Yen Converter to USD and EUR</h1>
 
-        <p></p>
-        
-        To:  <input type="text" id="toAmount" />
-        <select id="toCurrency">
-            <option value="USD">US Dollars</option>
-        </select>
-        
-        <p></p>
-        <button onclick="convert()">Convert</button>
-    </body>
-    <script src="script.js"></script>
+    <label for="yenInput">Enter amount in Yen (JPY): </label>
+    <input id="yenInput" type="number" placeholder="exp. 2000"><br><br>
+
+    <label for="usdOutput">Amount in USD: </label>
+    <input id="usdOutput" type="text" readonly><br><br>
+
+    <label for="yenInput">Amount in EUR: </label>
+    <input id="eurOutput" type="text" readonly><br><br>
+
+
+    <button id="convertBtn">Convert</button>
+</body>
 </html>
