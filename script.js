@@ -2,13 +2,19 @@
 const exchangeRates = {
     "USD": {
       "USD": 1,
+      "GBP": 0.75,
       // Add more "to" currencies and rates as needed
     },
     "EUR": {
       "USD": 1.07,
+      "GBP": 0.87,
       // Add more "to" currencies and rates as needed
     },
-
+    "GBP" : {
+      "USD": 1.33,
+      "EUR": 1.15,
+      // Add more "to" currencies and rates as needed
+    }
     // Add more "from" currencies as needed
   };
 
