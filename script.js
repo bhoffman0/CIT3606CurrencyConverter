@@ -41,6 +41,10 @@ const exchangeRates = {
       "KRW": 0.011,
       // Add more "to" currencies and rates as needed
     },
+    "JPY": {
+      "USD": 0.0068,
+      "Euro": 0.0057,
+    },
 
     "KRW": {
       "USD": 0.00072,
