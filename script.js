@@ -7,7 +7,7 @@ const exchangeRates = {
       "JPY": 147.40,
       "KRW": 1392.27,
       "RUP": 16583.00,
-
+      "PHP": 58.17,
       // Add more "to" currencies and rates as needed
     },
     
@@ -18,6 +18,7 @@ const exchangeRates = {
       "JPY": 0.0057,
       "KRW": 1639.69,
       "RUP": 17824.00,
+      "PHP": 67.91,
       // Add more "to" currencies and rates as needed
     },
     "JPY": {
@@ -27,9 +28,9 @@ const exchangeRates = {
       "JPY": 1,
       "KRW": 11.12,
       "RUP": 120.00,
+      "PHP": 0.39,
       // Add more "to" currencies and rates as needed
     },
-    // Add more "from" currencies as needed
 
     "RUP": {
       "USD": 0.000060,
@@ -39,6 +40,7 @@ const exchangeRates = {
       "SK": 0.107,
       "JPY": 0.0083,
       "KRW": 0.011,
+      "PHP": 0.0035,
       // Add more "to" currencies and rates as needed
     },
 
@@ -49,6 +51,7 @@ const exchangeRates = {
       "KRW": 1,
       "SK": 0.075,
       "JPY": 0.0083,
+      "PHP": 0.041,
     },
 
     "SK": {
@@ -56,8 +59,21 @@ const exchangeRates = {
       "EUR": 0.090,
       "RUP": 1.00,
       "JPY": 0.0083,
-      "KRW": 0.011
-    }
+      "KRW": 0.011,
+      "PHP": 6.16,
+    },
+
+   "PHP": {
+      "USD": 0.017,
+      "EUR": 0.015,
+      "RUP": 288.14,
+      "KRW": 24.24,
+      "SK": 0.16,
+      "JPY": 2.57,
+      "PHP": 1,
+    },
+
+    
   };
 
   const convert = () => {
